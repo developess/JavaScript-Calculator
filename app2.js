@@ -6,10 +6,10 @@ const calculator = {
     memory: 0,
     storedFunction: "",
     screen: "",
-    add:        val => { this.memory += val; },
-    subtract:   val => { this.memory -= val; },
-    times:      val => { this.memory = this.memory * val; },
-    divide:     val => { this.memory = this.memory / val; },
+    add(val) { this.memory += val; },
+    subtract(val) { this.memory -= val; },
+    times(val) { this.memory = this.memory * val; },
+    divide(val) { this.memory = this.memory / val; },
 }
 
 // DOM Elements used:
@@ -45,15 +45,14 @@ functionButtons.forEach( (el) => {
             calculator.screen = "";
         } else if ( el.id == "equals" ) {
             let method = calculator.storedFunction;
-            let secondNumber = parseInt(calculator.screen);
-            eval(`calculator.${method}(${secondNumber})`);
+            calculator[method](parseInt(calculator.screen));
             calculator.screen = calculator.memory;
         } else {
             calculator.memory = parseInt(calculator.screen);
             calculator.storedFunction = el.id;
             calculator.screen = "";
         }
-        writeToScreen();        
+        writeToScreen();
     });
 });
 
