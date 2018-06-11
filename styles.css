@@ -20,7 +20,7 @@ h1 {
 
 .case {
   margin-top: 100px;
-  height: 395px;
+  height: 470px;
   width: 320px;
   background-color: black;
   border: solid 10px black;
@@ -34,7 +34,9 @@ h1 {
 }
 
 button {
-  border: none;
+  border-style: solid;
+  border-color: lightgrey;
+  border-width: 0 3px 3px 0;
   outline: none;
   margin: 10px;
   width: 55px;
@@ -46,22 +48,27 @@ button {
   border-radius: 5px;
 }
 
-button:focus {
-  background-color: pink;
+.wide {
+  width: 130px;
+}
+
+button:active {
+  border: transparent;
 }
 
 .number {
-  background-color: dodgerblue;
+  background-color: cornflowerblue;
 }
 
 .function {
   background-color: coral;
 }
 
-#clear {
-  background-color: lightgrey;
+#clear,
+#back  {
+  background-color: mediumorchid;
 }
 
 #equals {
-  background-color: seagreen;
+  background-color: mediumseagreen;
 }
