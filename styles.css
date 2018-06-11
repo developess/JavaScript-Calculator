@@ -46,6 +46,10 @@ button {
   border-radius: 5px;
 }
 
+button:focus {
+  background-color: pink;
+}
+
 .number {
   background-color: dodgerblue;
 }
