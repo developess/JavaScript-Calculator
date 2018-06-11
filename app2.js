@@ -56,5 +56,15 @@ functionButtons.forEach( (el) => {
     });
 });
 
+// Things to do:
+    // add more buttons 
+        // decimal point 
+        // square button
+        // Back button?
+    // add compound calculations
+        // more memory slots
+    // add handler in print function for long inputs / rounding
+    // add page embellishments
+    // add keystroke option i.e typed input
 
 
