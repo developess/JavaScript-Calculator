@@ -1,6 +1,6 @@
 var calculator = {
 		sum: 0,
-    storedFunction: "",
+            storedFunction: "",
 		add: function(value) {
       this.sum += value;
     },
