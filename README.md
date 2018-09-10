@@ -6,7 +6,7 @@
 
 (note functionality for 'back' and 'squared' buttons not yet added)
 
-https://developess.github.io/calculator/
+https://developess.github.io/JavaScript-Calculator/
 
 ## About this Project
 
