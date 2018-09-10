@@ -1,4 +1,4 @@
-# Browser Calculator
+# JavaScript Calculator
 
 #### CSS & JavaScript Calculator - DOM manipulation and JavaScript exercise :)
 
